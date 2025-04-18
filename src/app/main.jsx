@@ -11,7 +11,7 @@ import AppRouter from './providers/RouterProvider/ui/AppRouter.jsx'
 import { SWRProvider } from './providers/SWRProvider'
 
 Sentry.init({
-  dsn: "https://d422d7c6a6c630098243afbfd238f613@o4509174424862720.ingest.de.sentry.io/4509174453960784"
+  dsn: import.meta.env.SENTRY_DSN
 });
 
 createRoot(document.getElementById('root')).render(
