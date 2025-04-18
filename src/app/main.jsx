@@ -11,8 +11,8 @@ import AppRouter from './providers/RouterProvider/ui/AppRouter.jsx'
 import { SWRProvider } from './providers/SWRProvider'
 
 Sentry.init({
-  dsn: import.meta.env.SENTRY_DSN
-});
+  dsn: import.meta.env.SENTRY_DSN,
+})
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
