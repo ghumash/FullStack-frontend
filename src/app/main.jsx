@@ -1,12 +1,18 @@
+import { StrictMode, Suspense } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
+import * as Sentry from '@sentry/react'
+
+import { Toaster } from 'sonner'
 import './styles/globals.css'
 import { ThemeProvider } from '../app/providers/ThemeProvider'
-import { BrowserRouter } from 'react-router-dom'
-import { StrictMode, Suspense } from 'react'
 import { AppErrorBoundary } from '../app/providers/AppErrorBoundary'
 import AppRouter from './providers/RouterProvider/ui/AppRouter.jsx'
 import { SWRProvider } from './providers/SWRProvider'
-import { Toaster } from 'sonner'
+
+Sentry.init({
+  dsn: "https://d422d7c6a6c630098243afbfd238f613@o4509174424862720.ingest.de.sentry.io/4509174453960784"
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

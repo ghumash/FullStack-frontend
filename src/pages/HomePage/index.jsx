@@ -33,7 +33,6 @@ const HomePage = () => {
           </Button>
         </PageActions>
       </PageHeader>
-    </div>
-  )
+    </div>)
 }
 export default HomePage
