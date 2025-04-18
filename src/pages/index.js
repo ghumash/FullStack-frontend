@@ -1,0 +1,25 @@
+import { HomePageAsync } from './HomePage/index.async.jsx'
+import { AboutPageAsync } from './AboutPage/index.async.jsx'
+import { RegisterPageAsync } from './RegisterPage/index.async.jsx'
+import { LoginPageAsync } from './LoginPage/index.async.jsx'
+import { ForbiddenPageAsync } from './ForbiddenPage/index.async.jsx'
+import { NotFoundPageAsync } from './NotFoundPage/index.async.jsx'
+import { SettingsProfilePageAsync } from './SettingsProfilePage/index.async.jsx'
+import { SettingsSecurityPageAsync } from './SettingsSecurityPage/index.async.jsx'
+import { SettingsAppearancePageAsync } from './SettingsAppearancePage/index.async.jsx'
+import { DashboardUsersPageAsync } from './DashboardUsersPage/index.async.jsx'
+import { DashboardDashboardPageAsync } from './DashboardDashboardPage/index.async.jsx'
+import { GetHelpPageAsync } from './GetHelpPage/index.async.jsx'
+
+export { HomePageAsync as HomePage }
+export { AboutPageAsync as AboutPage }
+export { RegisterPageAsync as RegisterPage }
+export { LoginPageAsync as LoginPage }
+export { ForbiddenPageAsync as ForbiddenPage }
+export { NotFoundPageAsync as NotFoundPage }
+export { SettingsProfilePageAsync as SettingsProfilePage }
+export { SettingsSecurityPageAsync as SettingsSecurityPage }
+export { SettingsAppearancePageAsync as SettingsAppearancePage }
+export { DashboardUsersPageAsync as DashboardUsersPage }
+export { DashboardDashboardPageAsync as DashboardDashboardPage }
+export { GetHelpPageAsync as GetHelpPage }
