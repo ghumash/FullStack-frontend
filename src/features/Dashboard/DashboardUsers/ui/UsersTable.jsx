@@ -82,15 +82,17 @@ export function UsersTable({ users = [], isLoading, onEdit }) {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               <DropdownMenuCheckboxItem onClick={() => onEdit(user)}>Edit</DropdownMenuCheckboxItem>
-              <DropdownMenuCheckboxItem
-                className="text-destructive"
-                onClick={() => {
-                  setUserToDelete(user)
-                  setDialogOpen(true)
-                }}
-              >
-                Delete
-              </DropdownMenuCheckboxItem>
+              {!user?.superuser &&
+                <DropdownMenuCheckboxItem
+                  className="text-destructive"
+                  onClick={() => {
+                    setUserToDelete(user)
+                    setDialogOpen(true)
+                  }}
+                >
+                  Delete
+                </DropdownMenuCheckboxItem>
+              }
             </DropdownMenuContent>
           </DropdownMenu>
         )
