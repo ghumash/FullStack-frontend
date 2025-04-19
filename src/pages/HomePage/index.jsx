@@ -23,6 +23,10 @@ const HomePage = () => {
         <PageHeaderHeading>{title}</PageHeaderHeading>
         <PageHeaderDescription>{description}</PageHeaderDescription>
         <PageHeaderDescription>{description_2}</PageHeaderDescription>
+        <p>
+          Login as admin: login: admin1, password: admin1
+          (You can register account as user)
+        </p>
         <PageActions>
           <SignInButton />
           <Button asChild variant="ghost">
@@ -33,7 +37,6 @@ const HomePage = () => {
           </Button>
         </PageActions>
       </PageHeader>
-    </div>
-  )
+    </div>)
 }
 export default HomePage
