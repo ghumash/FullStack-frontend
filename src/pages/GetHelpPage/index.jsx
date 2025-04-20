@@ -1,6 +1,4 @@
 import { Card, CardHeader, CardTitle, CardContent, Input, Textarea, Button } from '@/shared/ui'
-import { siteConfig } from '@/shared/config'
-import { Icons } from '@/shared/ui'
 
 const GetHelpPage = () => {
   return (

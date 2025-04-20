@@ -14,7 +14,7 @@ const SettingsLayout = () => {
   return (
     <div className="flex min-h-svh flex-col">
       <Navbar />
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-10">
+      <div className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-10">
         <div>
           <h2 className="text-2xl font-bold tracking-tight">Settings</h2>
           <p className="text-muted-foreground text-sm">Manage your account settings.</p>
